@@ -1,0 +1,176 @@
+body
+  background-color: $frontend-background-color
+
+
+div.wrapper
+  margin: auto
+  width: 960px
+
+
+div#header
+  background-image: url("/images/header.png")
+  background-repeat: repeat-x
+  height: 147px
+
+  div.wrapper
+    position: relative
+
+  span.options
+    margin: 15px 0 0
+    position: absolute
+    right: 0
+
+    a:hover
+      border-bottom: 2px solid #FFF
+
+  div#logo
+    background-image: url("/logo.png")
+    height: 113px
+    left: 0
+    margin-top: 10px
+    position: absolute
+    width: 305px
+
+  div#menu
+    margin-top: 99px
+    position: absolute
+    right: 0
+
+    li
+      background-color: #527A93
+      display: inline
+      margin: 0 0 0 5px
+      padding: 15px 5px
+      @include round-corners(8px, 8px, 0, 0)
+      @include enable-ie-css3
+
+      a
+        padding: 10px 20px
+
+    li:hover
+      background-color: #8CABBF
+
+  span.site-title
+    position: absolute
+    top: 129px
+    z-index: 2
+
+  div#gray-gradient
+    background-image: url("/images/site_title.png")
+    background-repeat: repeat-x
+    height: 20px
+    top: 127px
+    position: absolute
+    width: 100%
+    z-index: 1
+
+
+div#main
+  margin-left: 0
+
+
+div#right-sidebar
+  margin-right: 0
+  width: 240px
+
+  div#tag-menu
+    background-image: url("/images/tag_cloud_gradient.png")
+    background-repeat: repeat-x
+    background-position: 0% 100%
+    border: 1px solid #DDD
+    padding: 10px 20px
+    @include round-corners(5px, 5px, 5px, 5px)
+    @include enable-ie-css3
+  
+    li
+      color: $default-color
+      list-style: square
+      margin-left: 30px
+      margin-bottom: 10px
+
+
+div#footer
+  overflow-x: hidden // Firefox needs this
+  position: relative
+  @include linear-gradient(#B5B5B5, #909090)
+  @include enable-ie-css3
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+  div.textile-body
+    margin: 0
+
+  div#text-left
+    float: left
+    min-height: 120px
+    padding: 40px 10px
+    width: 680px
+    @include linear-gradient(#B5B5B5, #909090)
+    @include enable-ie-css3
+
+  div#text-right
+    background-color: #8B8B8B
+    height: 100%
+    margin-left: 710px
+    overflow: auto
+    position: absolute
+    width: 100%
+
+    div.textile-body
+      margin: 40px 20px
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  border: 1px solid #024873
+  height: 200px
+  position: relative
+  margin: 20px auto 0
+  width: 960px
+
+  a
+    display: block
+  
+  a:hover
+    border: none
+
+
+div.announcement-tail
+  display: none
+
+
+div#announcement-numbers
+  background: url("/images/dark_transparency.png")
+  cursor: default
+  padding: 12px
+  position: absolute
+  right: 0
+  @include round-corners(0, 0, 0, 5px)
+  @include enable-ie-css3
+
+  a
+    display: inline-block
+
+
+div.announcement img
+  height: 200px
+  width: 960px
+
+
+div.announcement-text
+  background: url("/images/dark_transparency.png")
+  bottom: 0
+  padding: 14px
+  position: absolute
+  right: 0
+  width: 300px
+  @include round-corners(5px, 0, 0, 0)
+  @include enable-ie-css3
+
+  p.title
+    padding: 0 0 15px

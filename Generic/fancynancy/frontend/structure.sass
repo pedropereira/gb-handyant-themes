@@ -1,0 +1,162 @@
+body
+  background-color: $frontend-background-color
+  background-image: url("/images/bg.png")
+
+
+div.wrapper
+  margin: auto
+  width: 960px
+
+
+div#header
+  height: 175px
+
+  span.site-title
+    float: left
+    padding: 10px 20px
+
+  span.options
+    background-color: $default-color
+    float: right
+    padding: 10px 20px
+    @include round-corners(0, 0, 12px, 12px)
+    @include enable-ie-css3
+
+    a:hover
+      border-bottom: 2px solid #FFF
+
+  div#logo
+    clear: left
+    float: left
+    margin: 10px 5px
+
+
+  div#menu
+    float: right
+    margin: 105px 10px 0
+
+    li
+      display: inline
+
+    a
+      padding: 8px 10px
+
+    a:hover
+      background-color: $default-color
+      @include inset-box-shadow(0, 2px, 7px, #9B1E1E)
+      @include round-corners(12px, 12px, 12px, 12px)
+      @include enable-ie-css3
+
+
+div#content
+  background-color: #FEFEFE
+  border: 2px solid $default-color
+  position: relative
+  @include round-corners(12px, 12px, 12px, 12px)
+  @include enable-ie-css3
+
+
+div#tag-menu
+  background-color: $default-color
+  min-height: 110px
+  padding: 20px
+  position: absolute
+  right: 0
+  top: 245px
+  width: 180px
+  @include round-corners(12px, 0, 0, 12px)
+  @include enable-ie-css3
+
+  li
+    margin: 5px 0
+
+  a:hover
+    border-bottom: 2px solid #FFF
+
+
+div#footer
+  margin: 25px
+
+  a:hover
+    text-decoration: underline
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  border: 1px solid #222
+  height: 200px
+  margin: 20px 20px 0
+  position: relative
+  overflow: hidden
+  width: 920px
+
+  a
+    display: block
+    
+  a:hover
+    border: none
+
+
+div.announcement-tail
+  display: none
+
+
+div#announcement-numbers
+  background: url("/images/dark_transparency.png")
+  cursor: default
+  padding: 12px
+  position: absolute
+  background-clip: padding-box
+  @include round-corners(0, 0, 12px, 0)
+  @include enable-ie-css3
+
+  a
+    display: inline-block
+
+
+div#announcements img
+  height: 200px
+  width: 920px
+
+
+div.announcement-text
+  background: url("/images/dark_transparency.png")
+  bottom: 0
+  padding: 14px
+  position: absolute
+  right: 0
+  width: 300px
+  @include round-corners(12px, 0, 0, 0)
+  @include enable-ie-css3
+
+  p.title
+    padding: 0 0 15px
+
+
+// =====
+// Pages
+// =====
+
+
+body#pages_show div#main
+  ul li, ol li
+    list-style-position: inside
+    margin: $content-margin 30px
+  ul li
+    list-style-type: disc
+  ol li
+    list-style-type: decimal
+
+
+// =====
+// Posts
+// =====
+
+
+div.meta
+  @include round-corners(4px, 4px, 4px, 4px)
+  @include enable-ie-css3

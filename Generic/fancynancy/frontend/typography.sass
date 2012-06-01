@@ -1,0 +1,59 @@
+div#header
+
+  span.site-title
+    color: #222
+    @include text-shadow(1px, 1px, 0, #F0F0F0)
+    @include enable-ie-css3
+
+  span.options
+    color: #FFF
+    @include text-shadow(1px, 1px, 0, #222)
+    @include enable-ie-css3
+
+    a
+      color: #FFF
+
+
+div#menu
+  font-size: 15px
+
+  a
+    @include text-shadow(1px, 1px, 0, #F0F0F0)
+    @include enable-ie-css3
+
+  a:hover
+    color: #FFF
+    @include text-shadow(1px, 1px, 0, #222)
+    @include enable-ie-css3
+
+  a.current
+    color: #AA2121
+
+  a.current:hover
+    color: #FFF
+
+
+div#tag-menu
+  color: #FFF
+  font-size: 13px
+  text-align: right
+  @include text-shadow(1px, 1px, 0, #222)
+  @include enable-ie-css3
+
+  h2.title
+    font-size: 13px
+
+  a, a:hover
+    color: #FFF
+
+  a.selected
+    font-weight: bold
+
+
+div#footer
+  text-align: center
+  @include text-shadow(1px, 1px, 0, #F0F0F0)
+  @include enable-ie-css3
+
+  a
+    color: $default-color

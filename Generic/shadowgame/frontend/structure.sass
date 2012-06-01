@@ -1,0 +1,148 @@
+body
+  background-color: $frontend-background-color
+  overflow-x: hidden
+
+
+div.wrapper
+  margin: auto
+  width: 960px
+
+
+div#header
+  background-color: $menu-default-color
+  height: 50px
+  padding-top: 20px
+  @include linear-gradient(#C52626, #8F0000)
+  @include enable-ie-css3
+
+  div#white-stripe
+    background-color: #FFF
+    height: 23px
+    padding-top: 7px
+    @include box-shadow(0, 0, 10px, #222)
+    @include enable-ie-css3
+
+    span.options
+      float: right
+
+      a:hover
+        border-bottom: 2px solid $default-color
+
+
+div#panel
+  height: 250px
+  margin: auto
+  padding: 20px 0
+
+  div#logo
+    background-image: url("/logo.png")
+    float: right
+    height: 217px
+    margin: 15px 0
+    width: 251px
+
+
+div#menu
+  background-color: $menu-default-color
+  height: 40px
+  @include box-shadow(0, 0, 10px, #222)
+  @include linear-gradient(#C52626, #8F0000)
+  @include enable-ie-css3
+
+  ul li
+    display: inline-block
+    margin-top: 12px
+
+    a
+      padding: 12px 20px 11px
+
+    a.current
+      background-color: $menu-hover-color
+
+
+div#content
+  background-color: #FFF
+  border-left: 2px solid #000
+  border-right: 2px solid #000
+  border-bottom: 2px solid #000
+
+
+div#right-sidebar
+
+  div.block
+    border: 1px solid #000
+    margin-bottom: 20px
+    @include box-shadow(0, 0, 5px, #222)
+    @include enable-ie-css3
+
+    h2.title
+      padding: 8px 15px
+      @include box-shadow(0, 1px, 10px, #222)
+      @include linear-gradient(#C52626, #8F0000)
+      @include enable-ie-css3
+
+    li
+      list-style: disc
+      margin-left: 30px
+      margin-bottom: 10px
+
+
+div#footer
+  margin: 25px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  border: 1px solid #000
+  float: left
+  height: 250px
+  overflow: hidden
+  position: relative
+  width: 700px
+  @include box-shadow(0, 0, 10px, #111)
+  @include enable-ie-css3
+
+  a
+    display: block
+
+  a:hover
+    border: none
+
+
+div.announcement-tail
+  display: none
+
+
+div#announcement-numbers
+  background: url("/images/dark_transparency.png")
+  cursor: default
+  padding: 12px
+  position: absolute
+  right: 0
+
+  a
+    display: inline-block
+
+
+div.announcement img
+  height: 250px
+  width: 700px
+
+
+div.announcement-text
+  background: url("/images/dark_transparency.png")
+  bottom: 0
+  padding: 14px 12px 12px 14px
+  position: absolute
+  right: 0
+  width: 300px
+
+  p.title
+    padding: 0 0 15px

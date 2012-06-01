@@ -1,0 +1,224 @@
+body
+  background-color: $frontend-background-color
+  background-image: url("/images/hex.png")
+
+
+div#header
+  margin: 20px auto 40px
+  width: 960px
+  text-align: right
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+div.wrapper
+  background-color: #FFF
+  background-image: url("/images/wheel.png")
+  background-repeat: no-repeat
+  background-position: 100% 0
+  border: 1px solid #222
+  margin: auto
+  position: relative
+  width: 960px
+  @include box-shadow(0, 0, 10px, #222)
+  @include enable-ie-css3
+
+
+div#logo
+  padding: 20px
+
+
+div#menu
+  background-image: url("/images/menu.png")
+  height: 67px
+  left: -10px
+  position: absolute
+  top: 220px
+  width: 980px
+
+  ul
+    padding: 12px 0
+
+    li
+      display: inline
+
+      a
+        border: none
+        margin: 0 0 0 30px
+
+
+div#content
+  margin-top: 40px
+
+
+div#right-sidebar
+
+  h2.title
+    border: 1px solid #222
+    padding: 5px 15px
+    @include linear-gradient(#e14c00, #a93b00)
+    @include round-corners(10px, 10px, 10px, 10px)
+    @include enable-ie-css3
+
+  li
+    list-style: square
+    margin-left: 30px
+    margin-bottom: 10px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+div#support
+
+  a:hover
+    border-bottom: none !important
+
+  div#support-logos
+    margin-left: 15px
+
+  div.support-logo
+    background-color: #FFF
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    display: inline-block
+    height: 85px
+    margin-bottom: 3px
+    width: 85px
+    @include opacity(0.4)
+    @include transition(opacity, 0.2s, ease-in-out, 0s)
+    @include enable-ie-css3
+
+  div.support-logo:hover
+    @include opacity(1)
+    @include enable-ie-css3
+
+  div#um-logo
+    background-image: url("/images/supporters/um.png")
+
+  div#eeg-um-logo
+    background-image: url("/images/supporters/eeg_um.png")
+
+  div#aaum-tv-logo
+    background-image: url("/images/supporters/aaum_tv.png")
+
+  div#rum-logo
+    background-image: url("/images/supporters/rum.png")
+
+  div#ja-logo
+    background-image: url("/images/supporters/jornal_academico.png")
+
+  div#ipj-logo
+    background-image: url("/images/supporters/ipj.png")
+
+  div#fatech-logo
+    background-image: url("/images/supporters/fatech.png")
+
+  div#dieci-logo
+    background-image: url("/images/supporters/dieci.png")
+    height: 85px
+    width: 176px
+
+  div#ca-logo
+    background-image: url("/images/supporters/casa_academica.png")
+    height: 85px
+    width: 176px
+
+  div#sb-logo
+    background-image: url("/images/supporters/sardinha_biba.jpg")
+    height: 85px
+    width: 176px
+
+  div#cr-logo
+    background-image: url("/images/supporters/cristo_rei.jpg")
+    height: 85px
+    width: 176px
+
+  div#edp-logo
+    background-image: url("/images/supporters/edp.png")
+    height: 85px
+    width: 176px
+
+  div#meltino-logo
+    background-image: url("/images/supporters/meltino.png")
+    height: 85px
+    width: 176px
+
+  div#aaum-logo
+    background-image: url("/images/supporters/aaum.png")
+    height: 85px
+    width: 176px
+
+  div#lusitania-logo
+    background-image: url("/images/supporters/lusitania.png")
+    height: 85px
+    width: 176px
+
+  div#cgd-logo
+    background-image: url("/images/supporters/cgd.png")
+    height: 85px
+    width: 176px
+
+
+div#footer
+  margin: 25px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  border: 1px solid #222
+  height: 200px
+  margin: auto
+  overflow: hidden
+  position: relative
+  width: 920px
+
+  a
+    display: block
+
+  a:hover
+    border: none
+
+
+div.announcement-tail
+  display: none
+
+
+div#announcement-numbers
+  background: url("/images/dark_transparency.png")
+  cursor: default
+  padding: 12px
+  position: absolute
+  right: 0
+  @include round-corners(0, 0, 0, 12px)
+  @include enable-ie-css3
+
+  a
+    display: inline-block
+
+
+div.announcement img
+  height: 200px
+  width: 920px
+
+
+div.announcement-text
+  background: url("/images/dark_transparency.png")
+  bottom: 0
+  padding: 14px
+  position: absolute
+  right: 0
+  width: 300px
+  @include round-corners(12px, 0, 0, 0)
+  @include enable-ie-css3
+
+  p.title
+    padding: 0 0 15px

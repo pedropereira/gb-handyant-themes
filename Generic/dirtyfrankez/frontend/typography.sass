@@ -1,0 +1,51 @@
+div#header span.site-title
+  font-weight: bold
+
+
+div#header span.options
+  color: #FFF
+
+
+div#menu
+  color: #FFF
+  font-size: 15px
+
+  a
+    color: #FFF
+
+  a:hover
+    text-decoration: underline
+
+  a.current
+    @include text-shadow(1px, 1px, 0, #000)
+    @include enable-ie-css3
+
+  a.current:hover
+    text-decoration: none
+
+
+div#right-sidebar
+
+  h2
+    color: #FFF
+    font-size: 14px
+
+  a:hover
+    color: $default-color
+
+  a.selected
+    font-weight: bold
+
+
+div#footer
+  color: #444
+  text-align: center
+  font-weight: bold
+  @include text-shadow(1px, 1px, 0, #FFF)
+  @include enable-ie-css3
+
+  a
+    font-weight: bold
+
+  a:hover
+    color: $default-color

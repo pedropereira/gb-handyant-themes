@@ -1,0 +1,7 @@
+---
+  theme: hill
+  default_locale: pt
+  title: NECC
+  site_name: NECC
+  site_header: Núcleo de Estudantes de Ciências da Computação da Universidade do Minho
+  force_locale: "true"

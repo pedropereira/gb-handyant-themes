@@ -1,0 +1,87 @@
+@font-face
+  font-family: 'PTSansRegular'
+  src: url('/fonts/PTS55F-webfont.eot')
+  src: url('/fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype')
+  src: url('/fonts/PTS55F-webfont.woff') format('woff')
+  src: url('/fonts/PTS55F-webfont.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+
+@font-face
+  font-family: 'TerminalDosisExtraLight'
+  src: url('/fonts/terminaldosis-extralight-webfont.eot')
+  src: url('/fonts/terminaldosis-extralight-webfont.eot?#iefix') format('embedded-opentype')
+  src: url('/fonts/terminaldosis-extralight-webfont.woff') format('woff')
+  src: url('/fonts/terminaldosis-extralight-webfont.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+
+h2.title, h3.archives-month-title
+  font-size: 20px
+
+
+h2.title, div#archives, h3.archives-month-title
+
+  a:hover
+    border-bottom: 2px solid #F68B1E
+
+
+span.site-title
+  font-size: 20px
+  font-variant: small-caps
+
+
+span.options
+  color: #FFF
+  font-size: 14px
+  @include text-shadow(1px, 1px, 0, #222)
+  @include enable-ie-css3
+
+  a
+    color: #FFF
+
+  a:hover
+    text-decoration: underline
+
+
+div#menu
+
+  a
+    color: #7F8A90
+    font-size: 15px
+    text-transform: uppercase
+
+  a:hover
+    text-decoration: underline
+
+  a.current
+    color: #F68B1E
+
+
+div#left-sidebar, div#right-sidebar
+
+  h2
+    color: #FFF
+    font-family: 'TerminalDosisExtraLight'
+    font-size: 24px
+    text-align: center
+    text-transform: uppercase
+
+
+div.textile-body
+  color: #666
+
+
+div#footer
+  color: #FFF
+  text-align: center
+  @include text-shadow(1px, 1px, 0, #000)
+  @include enable-ie-css3
+
+  a
+    color: #FFF
+
+  a:hover
+    color: #F68B1E

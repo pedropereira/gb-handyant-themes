@@ -1,0 +1,180 @@
+body
+  background-color: #266B99
+  background-image: url('/images/bg.png')
+
+
+div.wrapper
+  margin: auto
+  width: 850px
+
+
+div#header
+  position: relative
+
+  div#options
+    position: absolute
+    right: 20px
+    top: 17px
+    @include opacity(0.8)
+    @include enable-ie-css3
+
+    a.admin-icon
+      background-image: url('/images/gear.png')
+      display: inline-block
+      height: 16px
+      text-indent: -9999px
+      width: 16px
+  
+    a.login-icon
+      background-image: url('/images/padlock_closed.png')
+      display: inline-block
+      height: 16px
+      text-indent: -9999px
+      width: 16px
+  
+    a.logout-icon
+      background-image: url('/images/padlock_open.png')
+      display: inline-block
+      height: 16px
+      text-indent: -9999px
+      width: 16px
+
+  div#logo
+    background-image: url('/logo.png')
+    float: left
+    height: 125px
+    margin: 58px 0 58px 20px
+    width: 283px
+
+  div#menu
+    height: 50px
+    margin: 20px 0
+    -webkit-box-shadow: 0 0 4px #111, inset 0 1px 0 #FFF
+    -moz-box-shadow: 0 0 4px #111, inset 0 1px 0 #FFF
+    box-shadow: 0 0 4px #111, inset 0 1px 0 #FFF
+    @include linear-gradient(#EDEDED, #DBDBDB)
+    @include round-corners(5px, 5px, 5px, 5px)
+    @include enable-ie-css3
+
+    ul
+      padding: 17px 0
+
+      li
+        display: inline
+        margin-right: 2px
+        padding: 16px 0
+
+        a
+          border: none
+          padding: 15px 20px
+
+
+div#content
+  background-color: #FFF
+  margin-bottom: 50px
+  -webkit-box-shadow: 0 0 4px #111, inset 0 0 50px rgba(0, 0, 0, 0.1)
+  -moz-box-shadow: 0 0 4px #111, inset 0 0 50px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 0 4px #111, inset 0 0 50px rgba(0, 0, 0, 0.1)
+
+  div#footer
+    background-image: url('/images/footer.png')
+    clear: both
+    height: 259px
+    position: relative
+    width: 850px
+
+    p#footer-info
+      background-color: #454545
+      bottom: 15px
+      margin: 0 20px
+      padding: 10px 0
+      position: absolute
+      width: 810px
+      @include inset-box-shadow(1px, 1px, 1px, #222)
+      @include round-corners(5px, 5px, 5px, 5px)
+      @include text-shadow(1px, 1px, 0, #222)
+      @include enable-ie-css3
+
+    div.footer-page
+      background-image: url('/images/line.png')
+      background-repeat: no-repeat
+      display: inline-block
+      height: 140px
+      margin-top: 40px
+      padding: 0 20px
+      vertical-align: top
+      width: 240px
+
+    div.footer-page:first-child
+      background-image: none
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  height: 250px
+  margin-bottom: 20px
+  position: relative
+  width: 850px
+  @include box-shadow(0, 0, 4px, #111)
+  @include enable-ie-css3
+
+  div.announcements-container
+    height: 100%
+    width: 100%
+
+  a.prev
+    background-image: url('/images/prev.png')
+    height: 60px
+    position: absolute
+    left: 16px
+    top: 175px
+    width: 60px
+    z-index: 21
+    @include opacity(0)
+    @include transition(opacity, 0.2s, ease-in-out, 0s)
+    @include enable-ie-css3
+
+  a.next
+    background-image: url('/images/next.png')
+    height: 60px
+    position: absolute
+    right: 16px
+    top: 175px
+    width: 60px
+    z-index: 21
+    @include opacity(0)
+    @include transition(opacity, 0.2s, ease-in-out, 0s)
+    @include enable-ie-css3
+
+  ul.pagination
+    position: absolute
+    text-align: center
+    top: 220px
+    width: 100%
+    z-index: 21
+
+    li
+      display: inline
+      margin: 0 2px
+
+    a
+      background-image: url('/images/pagination_off.png')
+      display: inline-block
+      height: 14px
+      text-indent: -9999px
+      width: 14px
+
+    li.current a
+      background-image: url('/images/pagination_on.png')
+
+
+div#announcements:hover
+
+  a.prev, a.next
+    display: inline
+    @include opacity(1)
+    @include enable-ie-css3

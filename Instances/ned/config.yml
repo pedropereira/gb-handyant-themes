@@ -1,0 +1,7 @@
+---
+  theme: shadowgame
+  default_locale: pt
+  title: NED
+  site_name: NED
+  site_header: Núcleo de Estudantes de Direito da Associação Académica de Coimbra
+  force_locale: "true"

@@ -1,0 +1,9 @@
+---
+  theme: none
+  default_locale: pt
+  title: Partido Social Democrata - Guimarães
+  site_name: Partido Social Democrata - Guimarães
+  site_header: Partido Social Democrata - Guimarães
+  announcement_size: "960x250#"
+  force_locale: "true"
+  has_gallery: "true"

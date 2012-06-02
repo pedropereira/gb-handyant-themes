@@ -1,0 +1,7 @@
+---
+  theme: pills
+  default_locale: pt
+  title: NEMUM
+  site_name: NEMUM
+  site_header: Núcleo de Estudantes de Medicina da Universidade do Minho
+  force_locale: "true"

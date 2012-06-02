@@ -1,0 +1,43 @@
+div#menu
+  color: #FFF
+  font-size: 14px
+
+  a
+    color: #FFF
+    @include text-shadow(1px, 2px, 0, #000)
+    @include enable-ie-css3
+
+  a:hover
+    text-decoration: underline
+
+  a.current
+    color: #FFD700
+
+  a.current:hover
+    text-decoration: none
+
+
+h2.title a:hover
+  border-bottom: 3px solid $default-color
+  color: $text-color
+
+
+div#right-sidebar
+
+  li
+    color: $default-color
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+  a.selected
+    font-weight: bold
+
+
+div#footer
+  color: #222
+  text-align: center
+
+  a
+    color: $default-color
+    font-weight: bold

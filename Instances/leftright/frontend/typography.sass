@@ -1,0 +1,52 @@
+span.options
+  color: #FFF
+  @include text-shadow(1px, 2px, 0, #000)
+  @include enable-ie-css3
+
+  a
+    color: #FFF
+
+
+div.announcement-text
+  color: $text-color
+
+
+div#menu
+  font-size: 14px
+
+  a
+    color: #F3E7DD
+
+  a:hover
+    color: #FFF
+    text-decoration: underline
+
+  a.current
+    color: #FFF
+
+  a.current:hover
+    text-decoration: none
+
+
+div#right-sidebar
+
+  h2.title
+    color: #FFF
+    font-size: 14px
+
+  li
+    color: $default-color
+
+  a.selected
+    font-weight: bold
+
+
+div#footer
+  color: #DDD
+  text-align: center
+  @include text-shadow(1px, 2px, 0, #222)
+  @include enable-ie-css3
+
+  a
+    color: $default-color
+    font-weight: bold

@@ -1,0 +1,8 @@
+---
+  theme: none
+  default_locale: pt
+  title: AJTG
+  site_name: AJTG
+  site_header: Associação Juvenil de Taekwondo de Gualtar
+  announcement_size: "920x200#"
+  force_locale: "true"

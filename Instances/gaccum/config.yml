@@ -1,0 +1,7 @@
+---
+  theme: topster
+  default_locale: pt
+  title: GACCUM
+  site_name: GACCUM
+  site_header: Grupo de Alunos de Ciências da Comunicação da Universidade do Minho
+  force_locale: "true"

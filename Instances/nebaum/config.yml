@@ -1,0 +1,7 @@
+---
+  theme: boxyframe
+  default_locale: pt
+  title: NEBAUM
+  site_name: NEBAUM
+  site_header: Núcleo de Estudantes de Biologia Aplicada da Universidade do Minho
+  force_locale: "true"

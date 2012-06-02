@@ -1,0 +1,387 @@
+body
+  background-image: url("/images/bg.png")
+
+
+h2.title
+  color: $default-color
+  font-size: 18px !important
+  margin-bottom: 0
+
+
+body > div.wrapper
+  border-left: 1px solid #444
+  border-right: 1px solid #444
+  position: relative
+
+
+div.wrapper
+  background-color: #FFF
+  margin: auto
+  width: 960px
+
+
+div#header
+  margin-bottom: 60px
+  position: relative
+
+  span.options
+    background-color: #A01818
+    display: block
+    height: 40px
+    left: -10px
+    padding: 0 25px
+    position: absolute
+    text-align: right
+    width: 930px
+
+    a
+      display: inline-block
+      margin-top: 12px
+
+  span.options:before, span.options:after
+    border-color: transparent
+    border-style: solid
+    content: ''
+    position: absolute
+    top: 40px
+
+  span.options:before
+    border-width: 0 10px 10px 0
+    border-right-color: #650F0F
+    left: 0
+
+  span.options:after
+    border-width: 0 0 10px 10px
+    border-left-color: #650F0F
+    right: 0
+
+  a#logo-container
+    display: inline-block
+
+    div#logo
+      background-image: url("/logo.png")
+      background-repeat: no-repeat
+      float: left
+      height: 160px
+      margin: 40px 20px 0
+      width: 300px
+
+  div#menu
+    background-color: $default-color
+    height: 40px
+    left: -10px
+    position: absolute
+    width: 980px
+
+    ul
+      margin: 0 15px
+
+      li
+        display: inline
+
+      a
+        border: none
+        display: inline-block
+        padding: 12px 15px
+
+  div#menu:before, div#menu:after
+    border-color: transparent
+    border-style: solid
+    content: ''
+    position: absolute
+    top: 40px
+
+  div#menu:before
+    border-width: 0 10px 10px 0
+    border-right-color: #576028
+    left: 0
+
+  div#menu:after
+    border-width: 0 0 10px 10px
+    border-left-color: #576028
+    right: 0
+
+
+div#left-sidebar
+  float: left
+  margin-left: 20px
+  width: 115px
+
+  h2.title
+    border-top: 3px solid #A01818
+    margin-bottom: 10px
+    padding-top: 5px
+
+
+div#main
+  float: left
+  margin-right: 0
+  margin-top: 0
+  width: 609px
+
+
+div#right-sidebar
+  float: right
+  width: 175px
+  margin: 0 20px 0 0
+
+  h2.title
+    border-top: 3px solid #A01818
+    margin-bottom: 10px
+    padding-top: 5px
+
+  div#maps
+    height: 185px
+
+    div#map-pt
+      background-image: url('/images/map_pt.png')
+      float: left
+      height: 125px
+      width: 75px
+  
+    div#map-pt:hover
+      background-image: url('/images/map_pt_hover.png')
+  
+    div#map-fr
+      background-image: url('/images/map_fr.png')
+      float: right
+      height: 105px
+      width: 100px
+  
+    div#map-fr:hover
+      background-image: url('/images/map_fr_hover.png')
+
+
+div#footer
+  background-color: $default-color
+  height: 40px
+  left: -10px
+  position: absolute
+  width: 980px
+
+  a:hover
+    text-decoration: underline
+
+  p
+    margin-top: 12px
+
+
+div#footer:before, div#footer:after
+  border-color: transparent
+  border-style: solid
+  bottom: 40px
+  content: ''
+  position: absolute
+
+
+div#footer:before
+  border-width: 10px 10px 0 0
+  border-right-color: #576028
+  left: 0
+
+
+div#footer:after
+  border-width: 10px 0 0 10px
+  border-left-color: #576028
+  right: 0
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  height: 200px
+  margin-bottom: 20px
+  position: relative
+  width: 589px
+
+  div.announcements-container
+    height: 100%
+    width: 100%
+
+  a.prev
+    background-image: url('/images/prev.png')
+    height: 60px
+    position: absolute
+    left: 16px
+    top: 75px
+    width: 60px
+    z-index: 21
+    @include opacity(0)
+    @include transition(opacity, 0.2s, ease-in-out, 0s)
+    @include enable-ie-css3
+
+  a.next
+    background-image: url('/images/next.png')
+    height: 60px
+    position: absolute
+    right: 16px
+    top: 75px
+    width: 60px
+    z-index: 21
+    @include opacity(0)
+    @include transition(opacity, 0.2s, ease-in-out, 0s)
+    @include enable-ie-css3
+
+  ul.pagination
+    position: absolute
+    text-align: center
+    top: 170px
+    width: 100%
+    z-index: 21
+
+    li
+      display: inline
+      margin: 0 2px
+
+    a
+      background-image: url('/images/pagination_off.png')
+      display: inline-block
+      height: 14px
+      text-indent: -9999px
+      width: 14px
+
+    li.current a
+      background-image: url('/images/pagination_on.png')
+
+
+div#announcements:hover
+
+  a.prev, a.next
+    display: inline
+    @include opacity(1)
+    @include enable-ie-css3
+
+
+// =====
+// Posts
+// =====
+
+
+div.meta
+  margin-bottom: 15px
+  text-align: right
+
+
+
+
+
+
+
+a.post-comments
+  background-image: url('/images/icons/comment.png')
+  background-repeat: no-repeat
+  margin-left: 5px
+  padding-left: 18px
+
+
+a.post-comments:hover
+  color: $default-color
+
+
+div.post
+  margin-bottom: 5px
+
+  img
+    height: 180px
+    margin-bottom: 10px
+    width: 264px
+
+
+div.post.first
+
+  h3
+    display: inline
+    font-size: 17px
+    font-family: Verdana
+    letter-spacing: -1px
+
+    a
+      color: $text-color
+
+  h3:hover
+    text-decoration: underline
+
+  a.post-image
+    display: block
+
+
+div.global-category
+  float: left
+  margin-bottom: 20px
+  margin-right: 20px
+  position: relative
+  width: 284px
+
+  div.global-category-body
+    background-color: #F2F5F2
+    min-height: 435px
+    padding: 10px
+
+  h2.title
+    border-bottom: 3px solid #A01818
+
+    a
+      display: block
+      border-bottom: none !important
+
+  h2.title:hover
+    border-bottom: 3px solid #99A846
+
+  span#posts-archive
+    background-color: $default-color
+    padding: 10px
+    position: absolute
+    bottom: 0
+    right: -10px
+    @include text-shadow(1px, 1px, 0, #576028)
+    @include enable-ie-css3
+
+    a
+      color: #FFF
+
+  span#posts-archive:after
+    border-color: transparent
+    border-style: solid
+    bottom: 38px
+    content: ''
+    position: absolute
+    border-width: 10px 0 0 10px
+    border-left-color: #576028
+    right: 0
+
+  span#posts-archive:hover
+    text-decoration: underline
+
+  p:hover
+    text-decoration: underline
+
+  h3.franca, h4.franca
+    background-image: url('/images/flags/fr.png')
+    background-position: 0 50%
+    background-repeat: no-repeat
+    padding-left: 25px
+
+  h3.portugal, h4.portugal
+    background-image: url('/images/flags/pt.png')
+    background-position: 0 50%
+    background-repeat: no-repeat
+    padding-left: 25px
+
+  ul
+    margin: 10px 0
+
+    li
+      color: $default-color
+
+    h4
+      display: inline
+      font-size: 12px
+
+      a
+        color: #586128
+
+    h4:hover
+      text-decoration: underline

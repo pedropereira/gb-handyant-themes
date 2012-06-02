@@ -1,0 +1,76 @@
+@font-face
+  font-family: 'PTSansNarrow'
+  src: url('/fonts/PTN57F.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+
+body
+  color: #FFF
+
+
+a
+  color: #FFF !important
+
+
+form.formtastic legend
+  color: #FFF
+
+
+div#menu
+  font-size: 16px
+  @include text-shadow(1px, 1px, 0, #000)
+  @include enable-ie-css3
+
+  ul li
+
+    a
+      color: #FFF
+
+    a:hover
+      text-decoration: underline
+
+    a.current
+      color: $default-color !important
+      text-decoration: none
+
+
+div#tag-menu
+
+  h2
+    color: #FFF
+    font-size: 12px
+    font-weight: bold
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+  a.selected
+    font-weight: bold
+
+
+div.meta
+  color: $default-color
+  text-align: right
+
+  a
+    color: $default-color
+
+  li
+    line-height: 18px
+
+
+div#footer
+  color: #FFF
+  text-align: center
+
+  a
+    color: #FFF
+    font-weight: bold
+
+  a:hover
+    color: $default-color
+
+
+.button
+  color: #222 !important

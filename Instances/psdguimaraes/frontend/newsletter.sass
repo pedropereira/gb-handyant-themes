@@ -1,0 +1,52 @@
+div#newsletter
+  color: #FFF
+  font-family: "PTSansRegular"
+
+  h2
+    background-color: $default-color
+
+  form
+    background-color: $default-color
+    background-image: url('/images/line.png')
+    @include round-corners(0, 0, 10px, 0)
+    @include enable-ie-css3
+
+    li
+      float: none
+      margin-bottom: 0
+      padding-right: 0
+
+    label
+      display: inline-block
+      float: none
+      margin-left: 10px
+      padding-top: 0
+      width: 35px !important
+
+    input[type='text']
+      border: 1px solid #7F8A90
+      font-size: 13px
+      margin: 15px 0 0 10px
+      padding: 4px
+      width: 120px !important
+      @include round-corners(0, 0, 0, 0)
+      @include enable-ie-css3
+
+    input[type='submit']
+      background-color: transparent
+      background-image: url('/images/icons/control_play.png')
+      background-position: 100%
+      background-repeat: no-repeat
+      border: none
+      color: #FFF
+      cursor: pointer
+      float: right
+      font-family: "PTSansRegular"
+      font-size: 12px
+      margin: 10px
+      padding-right: 20px
+      padding-top: 3px
+      text-transform: uppercase
+
+    input[type='submit']:hover
+      text-decoration: underline

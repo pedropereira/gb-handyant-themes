@@ -1,0 +1,41 @@
+<%= render :partial => 'shared/layout_head', :locals => { :sentir_saude_slider => true } %>
+
+<body>
+  <div class="wrapper">
+    <div id="header">
+      <div id="options">
+        <% if logged_in? %>
+          <% if permitted_to? :read, :admin_dashboard %>
+            <%= link_to t('navigation.administration'), admin_root_path, :class => 'admin-icon' %>
+          <% end %>
+          <%= link_to t('user_session.bar.logout'), user_logout_path, :class => 'logout-icon' %>
+        <% else %>
+          <%= link_to t("user_session.bar.signin"), new_user_session_path, :class => 'login-icon' %>
+        <% end %>
+      </div>
+
+      <div id="menu"><%= frontend_navigation_content %></div>
+    </div>
+
+    <%= render :partial => 'announcements/sentir_saude' %>
+
+    <div id="content" class="selfclear">
+      <%= '<div id="flash"><div class="message notice"><p>'+ flash[:notice] +'</p></div></div>' unless flash[:notice].blank? %>
+      <%= '<div id="flash"><div class="message error"><p>'+ flash[:error] +'</p></div></div>' unless flash[:error].blank? %>
+      <%= '<script>jQuery("#flash").hide().toggle("fade", {}, 2500).delay(4000).toggle("slide", { direction: "down" }, 1500);</script>' unless flash[:notice].blank? and flash[:error].blank? %>
+
+      <div id="main">
+        <%= yield %>
+      </div>
+
+      <div id="footer">
+        <div class="footer-page"><%= find_content_page('footer_left') %></div>
+        <div class="footer-page"><%= find_content_page('footer_center') %></div>
+        <div class="footer-page"><%= find_content_page('footer_right') %></div>
+
+        <p id="footer-info">Copyright © <%= Time.now.year %> <%= link_to configatron.site_name, configatron.site_url %>. All rights reserved. Powered by <%= link_to 'Group Buddies', 'http://www.groupbuddies.com' %>.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

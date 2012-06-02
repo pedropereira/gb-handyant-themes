@@ -1,0 +1,55 @@
+div.album
+  display: inline-block
+  margin: 10px
+  position: relative
+
+
+div.album:hover
+
+  img.thumb
+    border: 1px solid #000
+
+  span.name
+    background-color: #CCC
+
+
+img.thumb
+  border: 1px solid #777
+  padding: 2px
+
+
+span.name
+  background-color: #DDD
+  display: block
+  margin: 5px auto 0
+  padding: 5px
+  text-align: center
+  width: 95px
+  @include round-corners(15px, 15px, 15px, 15px)
+  @include enable-ie-css3
+
+
+a.edit-link
+  background-image: url("/images/icons/pencil.png")
+  background-position: 50%
+  background-repeat: no-repeat
+  margin: 10px
+  position: absolute
+  right: 0
+  text-indent: -9999px
+  top: 0
+  width: 16px
+
+
+div.gallery_entry
+  display: inline-block
+  margin-bottom: 45px
+  margin-right: 45px
+  position: relative
+  width: 148px
+  height: 98px
+
+
+#ruler
+  visibility: hidden
+  white-space: nowrap

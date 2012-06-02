@@ -1,0 +1,179 @@
+body
+  background-color: $frontend-background-color
+  background-image: url("/images/paper.png")
+  background-repeat: repeat
+
+
+div#wrapper
+  margin: auto
+  width: 960px
+
+
+div#header
+  height: 246px
+  margin: 10px auto 0
+
+
+div#logo
+  background-image: url("/logo.png")
+  background-repeat: no-repeat
+  float: left
+  height: 155px
+  margin: 55px 0 0
+  width: 348px
+
+
+div#stars
+  background-image: url("/images/stars.png")
+  background-repeat: no-repeat
+  float: right
+  height: 246px
+  width: 386px
+
+  div#left
+    float: left
+    height: 246px
+    width: 190px
+
+  div#center
+    float: left
+    height: 246px
+    width: 50px
+
+  div#right
+    float: left
+    height: 246px
+    width: 141px
+
+
+div#stars.jose
+  background-image: url("/images/jose.png")
+
+
+div#stars.rui
+  background-image: url("/images/rui.png")
+
+
+div#stars.nuno
+  background-image: url("/images/nuno.png")
+
+
+div#menu
+  background: url("/images/belt.png") 0 0 no-repeat
+  height: 56px
+  left: -25px
+  position: relative
+  top: -5px
+  width: 1012px
+  float: left
+
+  ul
+    float: left
+    padding: 18px 34px
+
+    li
+      display: inline
+
+      a
+        border: none
+        padding: 12px 10px
+
+  span.options
+    float: right
+    padding: 18px 34px
+
+
+div#content
+  background-color: #FFF
+  border: 2px solid #333
+
+
+div#right-sidebar
+  width: 196px
+
+  h2
+    background-image: url("/images/brush.png")
+    background-repeat: no-repeat
+    width: 180px
+    font-size: 13px
+    color: #FFF
+    padding: 12px 10px
+
+  li
+    list-style: square
+    margin-left: 30px
+    margin-bottom: 10px
+
+
+div#footer
+  margin: 25px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  border: 2px solid #333
+  height: 200px
+  overflow: hidden
+  margin: auto
+  position: relative
+  width: 920px
+  @include round-corners(2px, 2px, 2px, 2px)
+  @include enable-ie-css3
+
+  a
+    display: inline-block
+
+  a:hover
+    border: none
+    display: inline-block
+
+
+div.announcement-tail
+  display: none
+
+
+div#announcement-numbers
+  background: url("/images/dark_transparency.png")
+  cursor: default
+  padding: 12px
+  position: absolute
+  left: 0
+  @include round-corners(0, 0, 2px, 0)
+  @include enable-ie-css3
+
+
+div.announcement img
+  height: 200px
+  width: 920px
+
+
+div.announcement-text
+  background: url("/images/dark_transparency.png")
+  bottom: 0
+  padding: 14px
+  position: absolute
+  right: 0
+  width: 300px
+  @include round-corners(2px, 0, 0, 0)
+  @include enable-ie-css3
+
+  p.title
+    padding: 0 0 15px
+
+
+// =====
+// Posts
+// =====
+
+
+div.meta
+  @include text-shadow(1px, 1px, 0, #EDEDED)
+  @include round-corners(2px, 2px, 2px, 2px)
+  @include enable-ie-css3

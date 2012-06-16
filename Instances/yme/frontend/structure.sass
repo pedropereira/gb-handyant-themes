@@ -9,20 +9,21 @@ div.wrapper
   width: 930px
 
 
-div#header-top
+#header-top
   background-color: #E7E7E7
   height: 40px
   position: relative
   z-index: 1
   @include box-shadow(0, 0, 10px, #AAA)
+  @include enable-ie-css3
 
-  div#social-networks
+  #social-networks
     display: inline-block
     position: absolute
     left: 0
     top: 8px
 
-    a#facebook
+    #facebook
       background-image: url('/images/facebook_icon_off.png')
       display: inline-block
       height: 23px
@@ -30,62 +31,26 @@ div#header-top
       text-indent: -9999px
       width: 23px
 
-    a#facebook:hover
+    #facebook:hover
       background-image: url('/images/facebook_icon_on.png')
 
-    a#twitter
+    #twitter
       background-image: url('/images/twitter_icon_off.png')
       display: inline-block
       height: 23px
       text-indent: -9999px
       width: 23px
 
-    a#twitter:hover
+    #twitter:hover
       background-image: url('/images/twitter_icon_on.png')
 
-  div#options
-    background-color: #222
-    display: inline-block
-    height: 20px
-    padding: 5px
-    position: absolute
-    left: 380px
-    top: -36px
-    width: 100px
-    @include round-corners(0, 0, 10px, 10px)
-    @include transition(top, 0.2s, ease-in-out, 0s)
-
-    a.admin-icon
-      background-image: url('/images/gear.png')
-      display: inline-block
-      height: 16px
-      text-indent: -9999px
-      width: 16px
-
-    a.login-icon
-      background-image: url('/images/padlock_closed.png')
-      display: inline-block
-      height: 23px
-      text-indent: -9999px
-      width: 23px
-
-    a.logout-icon
-      background-image: url('/images/padlock_open.png')
-      display: inline-block
-      height: 16px
-      text-indent: -9999px
-      width: 16px
-
-  div#options:hover
-    top: 0
-
-  div#contact
+  #contact
     display: inline-block
     position: absolute
     right: 0px
     top: 8px
 
-    span#phone-number
+    #phone-number
       background-image: url('/images/phone_off.png')
       background-repeat: no-repeat
       display: inline-block
@@ -94,7 +59,7 @@ div#header-top
       padding-top: 4px
       margin-right: 10px
 
-    span#email
+    #email
       background-image: url('/images/mail_off.png')
       background-repeat: no-repeat
       display: inline-block
@@ -103,15 +68,15 @@ div#header-top
       padding-top: 4px
 
 
-div#header
+#header
   margin-bottom: 30px
 
-  a#logo
+  #logo
     display: inline-block
-    margin-top: -20px
+    margin-top: -5px
     height: 138px // opera fix
 
-  div#menu
+  #menu
     display: inline-block
     position: absolute
     right: 0
@@ -150,8 +115,34 @@ div#header
           background-image: url('/images/menu.png')
           text-shadow: none
 
-  p#business-statement
+  #business-statement
     margin: 10px 0 40px
+
+
+#options
+  float: right
+  padding-top: 10px
+
+  a.admin-icon
+    background-image: url('/images/gear.png')
+    display: inline-block
+    height: 16px
+    text-indent: -9999px
+    width: 16px
+
+  a.login-icon
+    background-image: url('/images/padlock_closed.png')
+    display: inline-block
+    height: 16px
+    text-indent: -9999px
+    width: 16px
+
+  a.logout-icon
+    background-image: url('/images/padlock_open.png')
+    display: inline-block
+    height: 16px
+    text-indent: -9999px
+    width: 16px
 
 
 div#content
@@ -295,6 +286,16 @@ div#announcements:hover
 
 
 
+form.formtastic legend
+  color: #FFF
+
+
+div.pagination
+  margin: 10px 0 0
+
+
+div#archives
+  margin: 0 0 20px
 
 
 div#new-comment
@@ -334,6 +335,13 @@ div.post
 
   div.textile-body
     margin: 0
+
+    a
+      border-bottom: none
+      text-decoration: underline
+
+    a:hover
+      text-decoration: none
 
   div.meta
     background-color: #292929

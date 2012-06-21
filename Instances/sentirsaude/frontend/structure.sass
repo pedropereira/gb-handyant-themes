@@ -129,29 +129,8 @@ div#announcements
     height: 100%
     width: 100%
 
-  a.prev
-    background-image: url('/images/prev.png')
-    height: 60px
-    position: absolute
-    left: 16px
-    top: 175px
-    width: 60px
-    z-index: 21
-    @include opacity(0)
-    @include transition(opacity, 0.2s, ease-in-out, 0s)
-    @include enable-ie-css3
-
-  a.next
-    background-image: url('/images/next.png')
-    height: 60px
-    position: absolute
-    right: 16px
-    top: 175px
-    width: 60px
-    z-index: 21
-    @include opacity(0)
-    @include transition(opacity, 0.2s, ease-in-out, 0s)
-    @include enable-ie-css3
+  a.prev, a.next
+    display: none
 
   ul.pagination
     position: absolute
@@ -173,11 +152,3 @@ div#announcements
 
     li.current a
       background-image: url('/images/pagination_on.png')
-
-
-div#announcements:hover
-
-  a.prev, a.next
-    display: inline
-    @include opacity(1)
-    @include enable-ie-css3

@@ -29,7 +29,7 @@
       <%= '<script>jQuery("#flash").hide().toggle("fade", {}, 2500).delay(4000).toggle("slide", { direction: "down" }, 1500);</script>' unless flash[:notice].blank? and flash[:error].blank? %>
 
       <% if params[:action] == 'index' and params[:controller] == 'posts' %>
-        <div id="main">
+        <div id="main" class="double-column">
           <h1>Introduction</h1>
           <div class="textile-body"><%= find_content_page('main_statement') %></div>
         </div>
@@ -38,11 +38,8 @@
           <%= yield %>
         </div>
       <% else %>
-        <div id="main">
+        <div id="main" class="single-column">
           <%= yield %>
-        </div>
-
-        <div id="sidebar">
         </div>
       <% end %>
 

@@ -30,14 +30,23 @@
 
       <% if params[:action] == 'index' and params[:controller] == 'posts' %>
         <div id="main">
-          <h1>Introduction</h2>
+          <h1>Introduction</h1>
           <div class="textile-body"><%= find_content_page('main_statement') %></div>
+        </div>
+
+        <div id="sidebar">
+          <%= yield %>
+        </div>
+      <% else %>
+        <div id="main">
+          <%= yield %>
+        </div>
+
+        <div id="sidebar">
         </div>
       <% end %>
 
-      <div id="sidebar">
-        <%= yield %>
-      </div>
+      
     </div>
 
     <%= render :partial => 'shared/footer' %>

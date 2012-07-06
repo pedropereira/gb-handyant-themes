@@ -1,0 +1,7 @@
+---
+  theme: none
+  default_locale: en
+  title: "Group Buddies"
+  site_name: "Group Buddies"
+  site_header: "Connect. Collaborate. Improve"
+  force_locale: "true"

@@ -1,0 +1,143 @@
+<%= render :partial => 'shared/layout_head5' %>
+
+<body>
+  <% javascript_tag do %>
+    $=jQuery;
+    $(window).scroll(function() {
+      var value = $(this).scrollTop();
+
+      if (value > 240) {
+        $('#slogan').css({'display': 'none'});
+        $('header .logo').css({'background-image': "url('/images/logo_lettering.png')", 'margin-top': '12px', 'height': '33px', 'width': '190px' });
+      }
+      else {
+        $('#slogan').css({'display': 'block'});
+        $('header .logo').css({'background-image': "url('/logo.png')", 'margin-top': '0px', 'height': '92px', 'width': '130px'});
+      }
+    });
+  <% end %>
+
+  <header>
+    <div class="wrapper">
+      <a href="/" class="logo">Group Buddies</a>
+
+      <nav><%= frontend_navigation_content %></nav>
+
+      <span id="slogan">Connect. Collaborate. Improve.</span>
+    </div>
+  </header>
+
+  <section id="intro">
+    <div class="wrapper">
+      <h1>Group Buddies.</h1>
+      <p>We collaborate.</p>
+      <p>Your business improves.</p>
+
+      <a href="#" id="arrow"></a>
+    </div>
+  </section>
+
+  <section id="who-we-are">
+    <div class="wrapper">
+      <h1>Hello!</h1>
+      <p>We're a young team of self-confessed coffee lovers from northern Portugal.</p>
+      <p>When we're not drinking coffee, we're creating beautiful and functional Web sites.</p>
+      <p>We also do a pretty good job in establishing your company's visual identity.</p>
+      <p>Want to meet the team? <span>Group Buddies</span> is:</p>
+      <ul class="team-list">
+        <li><a href="#">André Santos, Systems Administrator</a></li>
+        <li><a href="#">Hugo Marinho, Software Developer</a></li>
+        <li><a href="#">Luís Zamith, Backend Developer</a></li>
+        <li><a href="#">Miguel Regedor, Backend Developer</a></li>
+        <li><a href="#">Pedro Pereira, Frontend and Backend Developer</a></li>
+        <li><a href="#">Roberto Machado, CEO</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="what-we-do">
+    <div class="wrapper">
+      <h1>Did we mention that we absolutely <span>love</span> what we do?</h1>
+      <ul>
+        <li>
+          <h3>Corporate Identity</h3>
+          <p>Your identity is more than a logo. We can help you to effectively communicate your company's values by creating the right identity for you.</p>
+        </li>
+        <li>
+          <h3>Web Development</h3>
+          <p>We love the Web. We take pride in crafting beautiful designs on top of intuitive user interfaces in order to make your Web presence fun and profitable.</p>
+        </li>
+        <li>
+          <h3>Products</h3>
+          <p>Collaboration and communication are two key factors in the success of any organization. Our Web apps can further assist you in reaching your goal.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="what-we-did">
+    <div class="wrapper">
+      <h1>What we've done before:</h1>
+
+      <ul>
+        <li class="cbf thumbnail"><span class="name">CBFP</span> <span class="info">Web site for a Biology research center.</span></li>
+        <li class="yme thumbnail"><span class="name">Young Minho Enterprise</span> <span class="info">Web site for a junior consulting firm.</span></li>
+        <li class="dia thumbnail"><span class="name">Dia do Estudante</span> <span class="info">Web site to the celebration of the official Portuguese student day.</span></li>
+        <li class="ces thumbnail"><span class="name">CeSIUM</span> <span class="info">Web site for a computer science student's union.</span></li>
+        <li class="atr thumbnail"><span class="name">Atreve-te</span> <span class="info">Web site for a contest of business ideas.</span></li>
+        <li class="nem thumbnail"><span class="name">NEMUM</span> <span class="info">Web site for a medicine student's union.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact-us">
+    <div class="wrapper">
+      <h1>We'd love to hear from <span>you</span>.</h1>
+      <p>Lets have a chat, we're quite the friendly bunch.</p>
+
+      <form>
+        <ul>
+          <li>
+            <input id=name name=name type=text placeholder="Your name" required>
+          </li><li>
+            <input id=email name=email type=email placeholder="Your email" required>
+          </li><li>
+            <textarea id=address name=address placeholder="Your message" required></textarea>
+          </li>
+        </ul>
+
+        <button type=submit>Send!</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="wrapper">
+      <h1>Thanks for visiting!</h1>
+
+      <a href="/" class="logo">Group Buddies</a>
+
+      <section class="contact-us">
+        <h6>Contact us</h6>
+        <ul>
+          <li class="email">contact@groupbuddies.com</li>
+          <li class="phone">+351 914 007 128</li>
+          <li class="address">Braga, Portugal</li>
+        </ul>
+      </section>
+
+      <section class="connect-with-us">
+        <h6>Connect with us</h6>
+        <ul>
+          <li class="linkedin"><a href="http://www.linkedin.com/company/group-buddies">LinkedIn</a></li>
+          <li class="twitter"><a href="http://twitter.com/groupbuddies">Twitter</a></li>
+          <li class="facebook"><a href="http://www.facebook.com/groupbuddies">Facebook</a></li>
+        </ul>
+      </section>
+
+      <p class="copyright-info">© <%= Time.now.year %> <%= link_to 'Group Buddies', 'http://www.groupbuddies.com' %>. All rights reserved. Powered by the Handy Ant GMS.</p>
+    </div>
+  </footer>
+</body>
+</html>

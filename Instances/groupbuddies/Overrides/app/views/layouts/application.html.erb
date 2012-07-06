@@ -1,22 +1,6 @@
 <%= render :partial => 'shared/layout_head5' %>
 
 <body>
-  <% javascript_tag do %>
-    $=jQuery;
-    $(window).scroll(function() {
-      var value = $(this).scrollTop();
-
-      if (value > 240) {
-        $('#slogan').css({'display': 'none'});
-        $('header .logo').css({'background-image': "url('/images/logo_lettering.png')", 'margin-top': '12px', 'height': '33px', 'width': '190px' });
-      }
-      else {
-        $('#slogan').css({'display': 'block'});
-        $('header .logo').css({'background-image': "url('/logo.png')", 'margin-top': '0px', 'height': '92px', 'width': '130px'});
-      }
-    });
-  <% end %>
-
   <header>
     <div class="wrapper">
       <a href="/" class="logo">Group Buddies</a>

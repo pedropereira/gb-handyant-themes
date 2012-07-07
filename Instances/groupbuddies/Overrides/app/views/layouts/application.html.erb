@@ -5,7 +5,16 @@
     <div class="wrapper">
       <a href="/" id="header-logo" class="logo">Group Buddies</a>
 
-      <nav><%= frontend_navigation_content %></nav>
+      <nav>
+        <ul>
+          <li><a id="nav-intro" href="#">Intro</a></li>
+          <li><a id="nav-who-we-are" href="#">Who We Are</a></li>
+          <li><a id="nav-what-we-do" href="#">What We Do</a></li>
+          <li><a id="nav-what-we-did" href="#">What We Did</a></li>
+          <li><a id="nav-contact" href="#">Contact Us</a></li>
+          <li><a id="nav-thanks" href="#">Thanks</a></li>
+        </ul>
+      </nav>
 
       <span id="slogan">Connect. Collaborate. Improve.</span>
     </div>
@@ -28,13 +37,13 @@
       <p>When we're not drinking coffee, we're creating beautiful and functional Web sites.</p>
       <p>We also do a pretty good job in establishing your company's visual identity.</p>
       <p>Want to meet the team? <span>Group Buddies</span> is:</p>
-      <ul class="team-list">
-        <li><a href="#">André Santos, Systems Administrator</a></li>
-        <li><a href="#">Hugo Marinho, Software Developer</a></li>
-        <li><a href="#">Luís Zamith, Backend Developer</a></li>
-        <li><a href="#">Miguel Regedor, Backend Developer</a></li>
-        <li><a href="#">Pedro Pereira, Frontend and Backend Developer</a></li>
-        <li><a href="#">Roberto Machado, CEO</a></li>
+      <ul id="team-list">
+        <li><a data-name="andre" href="#">André Santos, Systems Administrator</a></li>
+        <li><a data-name="hugo" href="#">Hugo Marinho, Software Developer</a></li>
+        <li><a data-name="luis" href="#">Luís Zamith, Backend Developer</a></li>
+        <li><a data-name="miguel" href="#">Miguel Regedor, Backend Developer</a></li>
+        <li><a data-name="pedro" href="#">Pedro Pereira, Frontend and Backend Developer</a></li>
+        <li><a data-name="roberto" href="#">Roberto Machado, CEO</a></li>
       </ul>
     </div>
   </section>

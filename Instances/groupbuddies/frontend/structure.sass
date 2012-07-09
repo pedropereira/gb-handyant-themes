@@ -16,6 +16,7 @@ header
 
 .logo
   background-image: url('/logo.png')
+  background-repeat: no-repeat
   float: left
   height: 92px
   width: 130px
@@ -49,7 +50,7 @@ nav
     margin-left: 0
 
 
-#intro
+#home
   background-color: $default-color
   height: 720px
 
@@ -85,7 +86,7 @@ nav
 
   h1, p, ul
     padding-bottom: 30px
-    padding-left: 58%
+    padding-left: 56%
 
   h1
     padding-top: 80px
@@ -98,8 +99,9 @@ nav
 
 
 .team-member
+  background-repeat: no-repeat
   display: none
-  width: 1150px
+  width: 1280px
   height: 700px
 
   h1, p
@@ -108,32 +110,26 @@ nav
 
 #andre
   background-image: url('/images/team/andre.jpg')
-  background-repeat: no-repeat
 
 
 #hugo
   background-image: url('/images/team/hugo.jpg')
-  background-repeat: no-repeat
 
 
 #luis
   background-image: url('/images/team/luis.jpg')
-  background-repeat: no-repeat
 
 
 #miguel
   background-image: url('/images/team/miguel.jpg')
-  background-repeat: no-repeat
 
 
 #pedro
   background-image: url('/images/team/pedro.jpg')
-  background-repeat: no-repeat
 
 
 #roberto
   background-image: url('/images/team/roberto.jpg')
-  background-repeat: no-repeat
 
 
 #what-we-do
@@ -176,16 +172,19 @@ nav
     height: 136px
     margin-bottom: 80px
     margin-left: 22px
+    vertical-align: top
     width: 220px
     @include transition(background-image, 0.2s, 0s, ease-in-out)
     @include enable-ie-css3
+
+  .thumbnail:first-child, .thumbnail:nth-child(5)
+    margin-left: 0
 
   .cbf
     background-image: url('/images/cbfp.png')
 
   .cbf:hover
     background-image: url('/images/cbfp_hover.png')
-
 
   .yme
     background-image: url('/images/yme.png')
@@ -352,5 +351,5 @@ footer
 
 
 @media (max-width: 768px)
-  section#intro
+  section#home
     font-size: 2em

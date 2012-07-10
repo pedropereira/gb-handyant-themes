@@ -8,11 +8,11 @@
       <nav>
         <ul>
           <li><a id="nav-home" href="#">Home</a></li>
-          <li><a id="nav-who-we-are" href="#">Who We Are</a></li>
-          <li><a id="nav-what-we-do" href="#">What We Do</a></li>
-          <li><a id="nav-what-we-did" href="#">What We Did</a></li>
-          <li><a id="nav-contact" href="#">Contact Us</a></li>
-          <li><a id="nav-thanks" href="#">Thanks</a></li>
+          <li><a id="nav-who-we-are" href="#">Who we are</a></li>
+          <li><a id="nav-what-we-do" href="#">What we do</a></li>
+          <li><a id="nav-what-we-did" href="#">What we did</a></li>
+          <li><a id="nav-contact" href="#">Hire us</a></li>
+          <li><a id="nav-thanks" href="#">Contact us</a></li>
         </ul>
       </nav>
 
@@ -106,7 +106,7 @@
 
   <section id="what-we-did">
     <div class="wrapper">
-      <h1>What we've done before:</h1>
+      <h1>Some of the stuff we've done before:</h1>
 
       <ul>
         <li class="cbf thumbnail"><span class="name">CBFP</span> <span class="info">Web site for a Biology research center.</span></li>
@@ -127,15 +127,15 @@
       <form>
         <ul>
           <li>
-            <input id=name name=name type=text placeholder="Your name" required>
+            <input name=name type=text placeholder="Your name" required>
           </li><li>
-            <input id=email name=email type=email placeholder="Your email" required>
+            <input name=email type=email placeholder="Your email" required>
           </li><li>
-            <textarea id=address name=address placeholder="Your message" required></textarea>
+            <textarea name=address placeholder="Your message" required></textarea>
           </li>
         </ul>
 
-        <button type=submit>Send!</button>
+        <button type=submit>Send</button>
       </form>
     </div>
   </section>
@@ -162,6 +162,14 @@
           <li class="twitter"><a href="http://twitter.com/groupbuddies">Twitter</a></li>
           <li class="facebook"><a href="http://www.facebook.com/groupbuddies">Facebook</a></li>
         </ul>
+      </section>
+
+      <section class="subscribe-to-us">
+        <h6>Subscribe to us</h6>
+        <form>
+          <input type=email placeholder="Your email"></input>
+          <button>Submit</button>
+        </form>
       </section>
 
       <p class="copyright-info">© <%= Time.now.year %> <%= link_to 'Group Buddies', 'http://www.groupbuddies.com' %>. All rights reserved. Powered by the Handy Ant GMS.</p>

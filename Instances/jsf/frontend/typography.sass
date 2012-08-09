@@ -1,0 +1,115 @@
+@font-face
+  font-family: 'Exo Bold'
+  src: url('/fonts/exo-bold.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+
+body
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+
+
+a.site-title
+  color: $default-color
+  font-size: 1.4em
+  text-shadow: 1px 1px #FFF
+
+
+div#menu
+  text-transform: uppercase
+
+  li
+    line-height: 1em
+
+  a
+    color: $default-color
+
+  a:hover
+    text-decoration: underline
+
+  a.current
+    background-color: #f76332
+    color: #FFF
+
+  a.current:hover
+    text-decoration: none
+
+
+div#right-sidebar
+
+  h2
+    color: $default-color
+    font-size: 1.4em
+
+
+div#tag-menu
+  @include text-shadow(1px, 1px, 0, #FFF)
+  @include enable-ie-css3
+
+  a:hover
+    text-decoration: underline
+
+  ul
+    @include text-shadow(1px, 1px, 0, #FFF)
+    @include enable-ie-css3
+
+
+div.post
+  color: #555
+  @include text-shadow(1px, 1px, 0, #FFF)
+  @include enable-ie-css3
+
+  h2
+    font-size: 1.4em
+
+    a
+      color: $default-color
+
+    a:hover
+      text-decoration: underline
+
+  p
+    font-size: 13px
+
+  .more a:hover
+    border-bottom: 2px solid #f76332
+
+
+div#archives
+  font-size: 13px
+  margin: 0
+  @include text-shadow(1px, 1px, 0, #FFF)
+  @include enable-ie-css3
+
+  a
+    text-decoration: underline
+
+  a:hover
+    border: none
+    text-decoration: none
+
+
+div#new-comment
+
+  h2
+    font-size: 18px
+    @include text-shadow(1px, 1px, 0, #FFF)
+    @include enable-ie-css3
+
+
+div#footer
+  color: #FAFAFA
+  line-height: 1.5em
+  @include text-shadow(1px, 1px, 0, rgba(0, 0, 0, 0.4))
+  @include enable-ie-css3
+
+  h3
+    font-family: "Exo Bold"
+    font-size: 1.5em
+
+  a
+    color: #b8d690
+    text-decoration: underline
+
+  a:hover
+    text-decoration: none

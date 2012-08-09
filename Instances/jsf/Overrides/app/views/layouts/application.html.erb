@@ -1,0 +1,87 @@
+<%= render :partial => 'shared/layout_head' %>
+
+<body>
+  <div id="header">
+    <div class="wrapper">
+      <a class="site-title" href="/"><%= configatron.site_header %></a>
+
+      <div id="menu"><%= frontend_navigation_content %></div>
+    </div>
+  </div>
+
+  <%# render :partial => 'announcements/sentir_saude' %>
+  <div id="announcement"></div>
+
+  <div class="wrapper">
+    <div id="content" class="selfclear">
+      <%= '<div id="flash"><div class="message notice"><p>'+ flash[:notice] +'</p></div></div>' unless flash[:notice].blank? %>
+      <%= '<div id="flash"><div class="message error"><p>'+ flash[:error] +'</p></div></div>' unless flash[:error].blank? %>
+      <%= '<script>jQuery("#flash").hide().toggle("fade", {}, 2500).delay(4000).toggle("slide", { direction: "down" }, 1500);</script>' unless flash[:notice].blank? and flash[:error].blank? %>
+
+      <div id="main" class="<%= 'login' if params[:action] == 'new' and params[:controller] == 'user/session' %>">
+        <%= yield %>
+      </div>
+
+      <div id="right-sidebar">
+        <div id="social-media">
+          <ul>
+            <li><a class="youtube" href="">YouTube</a></li>
+            <li><a class="twitter" href="">Twitter</a></li>
+            <li><a class="facebook" href="">Facebook</a></li>
+          </ul>
+        </div>
+
+        <%= tag_menu_widget(@tags) if params[:action] == 'index' and params[:controller] == 'posts' %>
+
+        <%= render :partial => 'shared/event_calendar', :locals => { :year => Time.now.year, :month => Time.now.month } %>
+
+        <%= render :partial => 'widgets/gallery' %>
+
+        <div id="options">
+          <% if logged_in? %>
+            <% if permitted_to? :read, :admin_dashboard %>
+              <%= link_to t('navigation.administration'), admin_root_path, :class => 'admin-icon' %>
+            <% end %>
+            <%= link_to t('user_session.bar.logout'), user_logout_path, :class => 'logout-icon' %>
+          <% else %>
+            <%= link_to t("user_session.bar.signin"), new_user_session_path, :class => 'login-icon' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="wrapper">
+      <a id="logo-footer" href="/">Jovens sem Fronteiras</a>
+      <div class="tab">
+        <h3>Entidades Relacionadas</h3>
+        <ul>
+          <li><a href="http://www.solsef.org/">Solsef</a></li>
+          <li><a href="http://www.espiritanos.org/">Espiritanos</a></li>
+        </ul>
+      </div>
+
+      <div class="tab">
+        <h3>Redes Sociais</h3>
+        <ul>
+          <li><a href="http://www.groupbuddies.com" title="ver mais" target="_blank">YouTube</a></li>
+          <li><a href="http://www.google.pt" title="ver mais" target="_blank">Twitter</a></li>
+          <li><a href="http://www.facebook.com" title="ver mais" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+
+      <div class="tab">
+        <h3>Contactos</h3>
+        <ul>
+          <li>Morada: Rua da Liberdade</li>
+          <li>Telefone: 910000000</li>
+          <li>Email: hello@jsf.pt</li>
+        </ul>
+      </div>
+
+      <p id="copyright"><%= t 'footer.default_message', :year => Time.now.year, :site_name => configatron.site_name, :site_url => configatron.site_url %></p>
+    </div>
+  </div>
+</body>
+</html>

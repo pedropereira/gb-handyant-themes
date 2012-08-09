@@ -1,0 +1,333 @@
+body
+  background-image: url('/images/bg.png')
+
+
+div.wrapper
+  width: 940px
+  margin: auto
+
+
+div#header
+  background-color: #FAFAFA
+  border-top: 3px solid $default-color
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+  height: 100px
+  position: absolute
+  width: 100%
+
+  a.site-title
+    background-image: url('/logo.png')
+    background-repeat: no-repeat
+    display: inline-block
+    height: 60px
+    margin-top: 15px
+    padding-left: 90px
+    padding-top: 28px
+
+  div#menu
+    float: right
+    margin-top: 44px
+
+    a
+      padding: 10px
+      @include round-corners(5px, 5px, 5px, 5px)
+      @include enable-ie-css3
+
+    li
+      display: inline-block
+      margin-left: 30px
+
+
+#announcement
+  background-image: url('/images/test.jpg')
+  background-size: cover
+  border-bottom: 3px solid #b8d690
+  height: 500px
+  margin-bottom: 40px
+  width: 100%
+
+
+div#main
+  margin: 0
+
+
+div#main.login
+  background-color: #FAFAFA
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1)
+  margin-bottom: 40px
+  position: relative
+  padding: 20px
+  width: 570px
+
+
+div#right-sidebar
+  margin: 0 0 40px 40px
+
+  #social-media
+    background-color: #FAFAFA
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.1)
+    margin-bottom: 40px
+    padding: 20px
+
+    li
+      display: inline-block
+      margin-left: 20px
+
+    .youtube
+      background-image: url('/images/youtube_icon.png')
+      display: block
+      height: 23px
+      text-indent: -9999px
+      width: 23px
+
+    .twitter
+      background-image: url('/images/twitter_icon.png')
+      display: block
+      height: 23px
+      text-indent: -9999px
+      width: 23px
+
+    .facebook
+      background-image: url('/images/facebook_icon.png')
+      display: block
+      height: 23px
+      text-indent: -9999px
+      width: 23px
+
+  h2.title
+    background-position: 0 50%
+    background-repeat: no-repeat
+    padding-left: 24px
+
+  div#tag-menu
+    background-color: #FAFAFA
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.1)
+    margin-bottom: 40px
+    padding: 20px
+
+    h2.title
+      background-image: url('/images/tag_menu.png')
+
+    ul
+      padding-left: 2px
+
+    li
+      background-position: 0 50%
+      background-repeat: no-repeat
+      color: #f76332
+      margin-bottom: 5px
+      margin-left: 18px
+      list-style: disc
+
+
+div#options
+  float: right
+
+  a.admin-icon
+    background-image: url('/images/gear.png')
+    display: inline-block
+    height: 16px
+    text-indent: -9999px
+    width: 16px
+
+  a.login-icon
+    background-image: url('/images/padlock_closed.png')
+    display: inline-block
+    height: 16px
+    text-indent: -9999px
+    width: 16px
+
+  a.logout-icon
+    background-image: url('/images/padlock_open.png')
+    display: inline-block
+    height: 16px
+    text-indent: -9999px
+    width: 16px
+
+
+div.post
+  background-color: #FAFAFA
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1)
+  margin-bottom: 40px
+  margin-left: 90px
+  position: relative
+  padding: 20px
+  width: 570px
+
+  h2
+    background-image: url('/images/post.png')
+    background-position: 0 40%
+    background-repeat: no-repeat
+    padding-left: 24px
+
+  p
+    display: inline-block
+    vertical-align: top
+
+  div.post-image
+    display: inline-block
+    float: none
+
+    img
+      background-color: #FFF
+      border: 1px solid #FBFBFB
+      padding: 10px
+      box-shadow: inset 0 0 20px #E5E5E5, 0 0 5px #CACACA
+
+  div.textile-body
+    border-bottom: 1px dashed #BBB
+    margin: 0
+    padding-bottom: 10px
+
+  div.meta
+    background-color: transparent
+    font-size: 12px
+    margin: 0
+    padding: 20px 0 0
+    text-align: left
+
+    a
+      text-decoration: underline
+
+    a:hover
+      border-bottom: none
+      text-decoration: none
+
+    li
+      display: inline-block
+
+    li.date
+      background-color: #f76332
+      box-shadow: 4px 4px rgba(0, 0, 0, 0.1)
+      color: #FFF
+      left: -90px
+      padding: 20px
+      position: absolute
+      text-align: right
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.3)
+      top: 0
+      width: 50px
+      z-index: -1
+
+    li.comments
+      background-image: url('/images/comments.png')
+      background-repeat: no-repeat
+      padding-left: 20px
+
+    li.tags
+      background-image: url('/images/tag.png')
+      background-repeat: no-repeat
+      float: right
+      padding-left: 20px
+
+
+div#new-comment
+  background-color: #FAFAFA
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1)
+  margin-bottom: 40px
+  margin-left: 90px
+  position: relative
+  padding: 20px
+  width: 570px
+
+  form
+    margin: 0
+
+  textarea
+    max-width: 560px
+    width: 560px !important
+
+
+ol#comment-list
+  margin: 0 0 0 40px
+
+  hr
+    display: none
+
+  li
+    background-color: #F4F4F4
+    border: 1px solid #F7F7F7
+    box-shadow: inset 0 0 40px #E5E5E5, 0 0 5px #CACACA
+    margin-bottom: 20px
+    padding: 20px
+
+
+div#footer
+  background-color: $default-color
+  background-image: url('/images/footer.png')
+  border-top: 3px solid #f76332
+  height: 160px
+  margin: 40px 0 0
+  padding: 40px 0
+
+  #logo-footer
+    background-image: url('/images/logo_footer.png')
+    background-repeat: no-repeat
+    display: inline-block
+    height: 126px
+    margin-bottom: 30px
+    text-indent: -9999px
+    width: 160px
+
+  .tab
+    display: inline-block
+    margin-left: 25px
+    vertical-align: top
+    width: 230px
+
+  .tab:first-child
+    margin-left: 0
+
+  h3
+    margin-bottom: 20px
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  height: 270px
+  margin-bottom: 40px
+  overflow: hidden
+
+  a
+    display: inline-block
+
+  a:hover
+    border: none
+    display: inline-block
+
+
+div.announcement-tail
+  display: none
+
+
+div#announcement-numbers
+  background: url("/images/dark_transparency.png")
+  cursor: default
+  padding: 12px
+  position: absolute
+  left: 0
+  @include round-corners(0, 0, 10px, 0)
+  @include enable-ie-css3
+
+
+div.announcement img
+  height: 250px
+  width: 920px
+
+
+div.announcement-text
+  background: url("/images/dark_transparency.png")
+  bottom: 0
+  padding: 14px
+  position: absolute
+  right: 0
+  width: 300px
+  @include round-corners(10px, 0, 0, 0)
+  @include enable-ie-css3
+
+  p.title
+    padding: 0 0 15px

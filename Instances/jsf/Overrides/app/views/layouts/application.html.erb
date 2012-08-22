@@ -18,7 +18,7 @@
       <%= '<div id="flash"><div class="message error"><p>'+ flash[:error] +'</p></div></div>' unless flash[:error].blank? %>
       <%= '<script>jQuery("#flash").hide().toggle("fade", {}, 2500).delay(4000).toggle("slide", { direction: "down" }, 1500);</script>' unless flash[:notice].blank? and flash[:error].blank? %>
 
-      <div id="main" class="<%= 'login' if params[:action] == 'new' and params[:controller] == 'user/session' %>">
+      <div id="main" class="<%= 'box' if params[:action] != 'index' and params[:controller] != 'posts' %>">
         <%= yield %>
       </div>
 

@@ -18,7 +18,7 @@
       <%= '<div id="flash"><div class="message error"><p>'+ flash[:error] +'</p></div></div>' unless flash[:error].blank? %>
       <%= '<script>jQuery("#flash").hide().toggle("fade", {}, 2500).delay(4000).toggle("slide", { direction: "down" }, 1500);</script>' unless flash[:notice].blank? and flash[:error].blank? %>
 
-      <div id="main" class="<%= 'box' if params[:action] != 'index' and params[:controller] != 'posts' %>">
+      <div id="main" class="<%= 'box' if (request.path != '/' and params[:controller] != 'posts') or request.path == '/archives' %>">
         <%= yield %>
       </div>
 
@@ -39,6 +39,7 @@
 
         <div id="options">
           <% if logged_in? %>
+            <%= link_to t('user_account.edit'), edit_user_account_path, :class => 'user-icon' %>
             <% if permitted_to? :read, :admin_dashboard %>
               <%= link_to t('navigation.administration'), admin_root_path, :class => 'admin-icon' %>
             <% end %>

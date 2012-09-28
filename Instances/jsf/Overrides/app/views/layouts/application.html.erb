@@ -54,17 +54,7 @@
 
   <div id="footer">
     <div class="wrapper">
-      <a id="logo-footer" href="/">Jovens sem Fronteiras</a>
-      <div class="tab">
-        <h3>Links Úteis</h3>
-        <ul>
-          <li><a href="http://www.ecclesia.pt/pjuvenil/">Departamento Nacional da Pastoral Juvenil</a></li>
-          <li><a href="http://www.ecclesia.pt/">Conferência Episcopal Portuguesa</a></li>
-          <li><a href="http://www.bibliaonline.com.br/">Bíblia On-line</a></li>
-        </ul>
-      </div>
-
-      <div class="tab">
+      <div class="tab social">
         <h3>Redes Sociais</h3>
         <ul>
           <li><a href="http://www.groupbuddies.com" title="ver mais" target="_blank">YouTube</a></li>
@@ -73,14 +63,22 @@
         </ul>
       </div>
 
-      <div class="tab">
-        <h3>Contactos</h3>
+      <a id="logo-footer" href="/">Jovens sem Fronteiras</a>
+
+      <div class="tab links">
+        <h3>Links Úteis</h3>
         <ul>
-          <li>Morada: Rua da Liberdade</li>
-          <li>Telefone: 910000000</li>
-          <li>Email: hello@jsf.pt</li>
+          <li><a href="http://www.ecclesia.pt/pjuvenil/">Departamento Nacional da Pastoral Juvenil</a></li>
+          <li><a href="http://www.ecclesia.pt/">Conferência Episcopal Portuguesa</a></li>
+          <li><a href="http://www.bibliaonline.com.br/">Bíblia On-line</a></li>
         </ul>
       </div>
+
+      <ul id="contacts">
+        <li><span>Morada</span> Rua de Santo Amaro à Estrela, 51 - Lisboa</li>
+        <li><span>Telefone</span> +351 214 458 440 (Pe. Miguel Ribeiro)</li>
+        <li><span>Email</span> jsf@espiritanos.org</li>
+      </ul>
 
       <p id="copyright"><%= t 'footer.default_message', :year => Time.now.year, :site_name => configatron.site_name, :site_url => configatron.site_url %></p>
     </div>

@@ -9,8 +9,7 @@
     </div>
   </div>
 
-  <%# render :partial => 'announcements/sentir_saude' %>
-  <div id="announcement"></div>
+  <%= render :partial => 'announcements/sentir_saude' %>
 
   <div class="wrapper">
     <div id="content" class="selfclear">
@@ -25,9 +24,7 @@
       <div id="right-sidebar">
         <div id="social-media">
           <ul>
-            <li><a class="youtube" href="">YouTube</a></li>
-            <li><a class="twitter" href="">Twitter</a></li>
-            <li><a class="facebook" href="">Facebook</a></li>
+            <li><a class="youtube" href="">YouTube</a></li><li><a class="facebook" href="">Facebook</a></li>
           </ul>
         </div>
 
@@ -55,11 +52,11 @@
   <div id="footer">
     <div class="wrapper">
       <div class="tab social">
-        <h3>Redes Sociais</h3>
+        <h3>Contactos</h3>
         <ul>
-          <li><a href="http://www.groupbuddies.com" title="ver mais" target="_blank">YouTube</a></li>
-          <li><a href="http://www.google.pt" title="ver mais" target="_blank">Twitter</a></li>
-          <li><a href="http://www.facebook.com" title="ver mais" target="_blank">Facebook</a></li>
+          <li><span>Morada</span> Rua de Santo Amaro à Estrela, 51 - Lisboa</li>
+          <li><span>Telefone</span> +351 214 458 440 (Pe. Miguel Ribeiro)</li>
+          <li><span>Email</span> jsf@espiritanos.org</li>
         </ul>
       </div>
 
@@ -73,12 +70,6 @@
           <li><a href="http://www.bibliaonline.com.br/">Bíblia On-line</a></li>
         </ul>
       </div>
-
-      <ul id="contacts">
-        <li><span>Morada</span> Rua de Santo Amaro à Estrela, 51 - Lisboa</li>
-        <li><span>Telefone</span> +351 214 458 440 (Pe. Miguel Ribeiro)</li>
-        <li><span>Email</span> jsf@espiritanos.org</li>
-      </ul>
 
       <p id="copyright"><%= t 'footer.default_message', :year => Time.now.year, :site_name => configatron.site_name, :site_url => configatron.site_url %></p>
     </div>

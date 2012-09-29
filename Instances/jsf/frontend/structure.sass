@@ -12,11 +12,10 @@ div#header
   border-top: 3px solid $default-color
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
   height: 100px
-  position: absolute
   width: 100%
 
   a.site-title
-    background-image: url('/logo2.png')
+    background-image: url('/logo.png')
     background-repeat: no-repeat
     display: inline-block
     height: 60px
@@ -69,11 +68,19 @@ div#right-sidebar
     margin-bottom: 40px
     padding: 20px
 
+    h2.title
+      background-image: url('/images/social.png')
+      background-repeat: no-repeat
+
     li
       display: inline-block
+      @include opacity(0.6)
 
     li:nth-child(2)
       margin-left: 20px
+
+    li:hover
+      @include opacity(1)
 
     .youtube
       background-image: url('/images/youtube_icon.png')
@@ -299,54 +306,76 @@ div#footer
 
 
 div#announcements
-  height: 270px
-  margin-bottom: 40px
-  overflow: hidden
-
-  a
-    display: inline-block
-
-  a:hover
-    border: none
-    display: inline-block
-
-
-div.announcement-tail
-  display: none
-
-
-div#announcement-numbers
-  background: url("/images/dark_transparency.png")
-  cursor: default
-  padding: 12px
-  position: absolute
-  left: 0
-  @include round-corners(0, 0, 10px, 0)
-  @include enable-ie-css3
-
-
-div.announcement img
-  height: 250px
+  background-color: #FAFAFA
+  border: 1px solid #DDD
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1)
+  height: 300px
+  margin: 40px auto 40px
+  padding: 10px
+  position: relative
   width: 920px
 
+  div.announcements-container
+    height: 100%
+    width: 100%
 
-div.announcement-text
-  background: url("/images/dark_transparency.png")
-  bottom: 0
-  padding: 14px
-  position: absolute
-  right: 0
-  width: 300px
-  @include round-corners(10px, 0, 0, 0)
-  @include enable-ie-css3
+  a.prev
+    background-image: url('/images/prev.png')
+    height: 60px
+    position: absolute
+    left: 16px
+    top: 125px
+    width: 60px
+    z-index: 21
+    @include opacity(0)
+    @include transition(opacity, 0.2s, ease-in-out, 0s)
+    @include enable-ie-css3
 
-  p.title
-    padding: 0 0 15px
+  a.next
+    background-image: url('/images/next.png')
+    height: 60px
+    position: absolute
+    right: 16px
+    top: 125px
+    width: 60px
+    z-index: 21
+    @include opacity(0)
+    @include transition(opacity, 0.2s, ease-in-out, 0s)
+    @include enable-ie-css3
+
+  ul.pagination
+    position: absolute
+    text-align: center
+    top: 270px
+    width: 100%
+    z-index: 21
+
+    li
+      display: inline
+      margin: 0 2px
+
+    a
+      background-image: url('/images/pagination_off.png')
+      display: inline-block
+      height: 14px
+      text-indent: -9999px
+      width: 14px
+
+    li.current a
+      background-image: url('/images/pagination_on.png')
 
 
-// =============
-// Announcements
-// =============
+div#announcements:hover
+
+  a.prev, a.next
+    display: inline
+    @include opacity(1)
+    @include enable-ie-css3
+
+
+// ======
+// Events
+// ======
 
 
 div.event-body

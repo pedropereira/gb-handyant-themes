@@ -1,9 +1,9 @@
 ---
   theme: none
   default_locale: pt
-  title: "Jovens sem Fronteiras"
-  site_name: "Jovens sem Fronteiras"
-  site_header: "Jovens sem Fronteiras"
+  title: "Jovens Sem Fronteiras"
+  site_name: "Jovens Sem Fronteiras"
+  site_header: "Jovens Sem Fronteiras"
   announcement_size: "920x300#"
   post_image_size: "549x200#"
   force_locale: "true"
